@@ -62,10 +62,24 @@
                       <li><a href="#">Servicio C</a></li>
                       <li role="separator" class="divider"></li>
                       <li><a href="#">Todos los servicios</a></li>
+                    
+
                     </ul>
                   <li><a href="#">Contacto</a></li>
                   </li>
                 </ul>
+                  
+                    {% for contacto in object_list %}
+              <div class="col-xs-6 col-sm-4">
+                <p><a href="{% url 'noticia_detalle' noticia.id %}">{{noticia.titular}}</a></p>
+                <p><span class="label label-info">{{noticia.categoria}}</span></p>
+              </div>
+            {% endfor%} 
+
+
+
+
+
               </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
           </nav>

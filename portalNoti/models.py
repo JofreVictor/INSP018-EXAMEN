@@ -33,3 +33,6 @@ class Contacto(models.Model):
     domicilio = models.CharField(max_length=70)
     imagen = models.ImageField(upload_to='photos')
 
+    def __str__(self):
+        return self.nombre
+
