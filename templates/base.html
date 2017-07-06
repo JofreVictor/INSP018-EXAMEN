@@ -65,18 +65,16 @@
                     
 
                     </ul>
-                  <li><a href="#">Contacto</a></li>
+                  <li><a href="{% url 'contactos' %}">Contacto</a></li>
                   </li>
                 </ul>
                   
-                    {% for contacto in object_list %}
+              {% for contacto in object_list %}
               <div class="col-xs-6 col-sm-4">
-                <p><a href="{% url 'noticia_detalle' noticia.id %}">{{noticia.titular}}</a></p>
-                <p><span class="label label-info">{{noticia.categoria}}</span></p>
+                <p><a href="{% url 'contactos' %}"></a></p>
+                
               </div>
             {% endfor%} 
-
-
 
 
 

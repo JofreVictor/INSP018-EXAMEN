@@ -25,9 +25,7 @@ def noticia_detalle(request, pk):
     return render(request, template_name, {'noticia': noticia})
 
 def contactos(request, pk):
-
-  	data = {}
-    
+	contacto = objects.all()
 	noticia = get_object_or_404(Noticia, pk=pk)
 	template_name = 'portalNoti/contactos.html'
 	return render(request, template_name, {'noticia': noticia})

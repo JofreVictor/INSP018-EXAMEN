@@ -6,6 +6,8 @@ from . import views
 
 urlpatterns = [
 	url(r'^$', views.noticia_list, name = 'noticia_list'),
+	url(r'^contactos/$', views.contactos, name = 'contactos'),
 	url(r'^noticia/(?P<pk>[0-9]+)/$', views.noticia_detalle, name = 'noticia_detalle'),
+	
 
    ]
